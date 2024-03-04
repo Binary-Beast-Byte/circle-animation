@@ -1,0 +1,55 @@
+.container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;    
+}
+
+.wrapper {
+    position: relative;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 100%;
+    background-color: red;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.item.active {
+    background-color: blue;
+}
+.item:not(.active) {
+    background-color: white;
+    opacity: 100;
+}
+
+
+svg {
+    height: 300px;
+    overflow: visible;
+    width: 300px;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.st0 { fill: none;
+    stroke:#000000;
+    stroke-width: 2;
+    stroke-miterlimit:1;
+}
+
+.start {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+}
